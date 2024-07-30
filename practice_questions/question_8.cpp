@@ -19,10 +19,14 @@ int main()
     int first_reminder = first_number % 5;
     int second_reminder = second_number % 5;
 
-    if (first_reminder == second_reminder)
+    if (first_number >= 0 && second_number >= 0)
     {
-        cout << "number are equal" << "\n";
+      if (first_reminder == second_reminder)
+        {
+            cout << "number are equal" << "\n";
+        }
     }
+   
     else
     {
         cout << "Calculation not possible" << "\n";
