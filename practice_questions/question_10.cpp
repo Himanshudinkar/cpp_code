@@ -26,6 +26,5 @@ int main()
     cout << "Enter Fourth Number" << "\n";
     int fourth_number = 0;
     cin >> fourth_number;
-
-    
 }
+return 
