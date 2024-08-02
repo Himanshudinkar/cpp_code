@@ -35,7 +35,7 @@ int main()
    }
    else if (month_number == 3)
    {
-    nomber_of_days = 31;
+    nomber_of_days = 31; 
    }
     else if (month_number == 4)
    {
