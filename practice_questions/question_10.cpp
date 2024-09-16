@@ -26,5 +26,19 @@ int main()
     cout << "Enter Fourth Number" << "\n";
     int fourth_number = 0;
     cin >> fourth_number;
+
+    if (first_number == second_number && third_number == fourth_number)
+    {
+        if (first_number % 2 == 0 && second_number % 2 == 0 && third_number %  2 == 0 && fourth_number % 2 == 0)
+        {
+            
+        }
+        else if (first_number % 2 == 1 && second_number % 2 == 1 && third_number %  2 == 1 && fourth_number % 2 == 1)
+        
+        {
+            cout << "odd"; 
+            
+        }
+        
+    }
 }
-return 
