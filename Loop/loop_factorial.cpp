@@ -2,15 +2,18 @@
 using namespace std;
 int main()
 {
-    int f = 1;
+    cout << "enter no to generate factorial\n";
+    int f = 0;
+    cin >> f;
+
     int i = 1;
 
     do
     {
         i = f * i;
-        f++;
-    } while (i <= 10);
-    cout << f << "\n";
+        f--;
+    } while (f >= 1);
+    cout << i << "\n";
 
     return 0;
     
