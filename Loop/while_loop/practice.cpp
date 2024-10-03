@@ -6,23 +6,15 @@ int main()
     int n1 = 0;
     cin >> n1;
 
-    cout << "enter num,ber 2" << "\t";
-    int n2 = 0;
-    cin >> n2;
+    int i = 0;
 
-    while (n1 <= n2)
+    while (n1 <= 10)
     {
-        if (n1 % 2 == 0)
-        {
-            cout << "even number = "<< n1<<"\n";
-        }
-        else if (n1 % 2 != 0)
-        {
-            cout << "odd number = "<< n1;
-        }
-        
+        i = n1 + i;
         n1++;
     }
+    cout << i;
+    
     return 0;
     
 }
