@@ -2,19 +2,32 @@
 using namespace std;
 int main()
 {
-    cout << "enter number 1" << "\t";
-    int n1 = 0;
-    cin >> n1;
+cout << "enter number to chake prime number" << "\n";
+int number =  0;
+cin >> number;
 
-    int i = 0;
+int i = number - 1;
 
-    while (n1 <= 10)
+bool f = true;
+
+do
+{
+    if (number % i == 0)
     {
-        i = n1 + i;
-        n1++;
+        f = false;
+        break;
     }
-    cout << i;
-    
-    return 0;
-    
+    i--;
+} while (i > 1);
+
+if (f == true)
+{
+    cout << "prime number = " << i << "\n";
+}
+else
+{
+    cout << "not prime\n";
+}
+return 0;
+
 }
