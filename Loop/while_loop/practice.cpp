@@ -7,14 +7,25 @@ int main()
     cin >> number;
 
     int i = 1;
+    bool f = true;
 
     do
     {
-        i = number * i;
-        number--;
-    } while (number > 0);
+        if (i * i == number)
+        {
+            f= false;
+            break;
+        }
+        i++;
+    } while (i <= number);
 
-    cout << "factorial is = " << i;
+    if (f == true)
+    {
+        cout << "suare root is = " << i << "\n";
+    }
+    else
+    {
+        cout << "square root not possible" << "\n";
+    }
     return 0;
-    
 }
