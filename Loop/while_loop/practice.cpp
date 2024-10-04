@@ -7,13 +7,13 @@ int main()
     cin >> number;
 
     int i = 1;
-    bool f = true;
+    bool f = false;
 
     do
     {
         if (i * i == number)
         {
-            f= false;
+            f= true;
             break;
         }
         i++;
