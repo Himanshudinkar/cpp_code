@@ -2,32 +2,19 @@
 using namespace std;
 int main()
 {
-cout << "enter number to chake prime number" << "\n";
-int number =  0;
-cin >> number;
+    cout << "enter a number" << "\n";
+    int number = 0;
+    cin >> number;
 
-int i = number - 1;
+    int i = 1;
 
-bool f = true;
-
-do
-{
-    if (number % i == 0)
+    do
     {
-        f = false;
-        break;
-    }
-    i--;
-} while (i > 1);
+        i = number * i;
+        number--;
+    } while (number > 0);
 
-if (f == true)
-{
-    cout << "prime number = " << i << "\n";
-}
-else
-{
-    cout << "not prime\n";
-}
-return 0;
-
+    cout << "factorial is = " << i;
+    return 0;
+    
 }
