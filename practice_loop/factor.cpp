@@ -18,7 +18,7 @@ int main()
         }
         i--;
     } while (i >= 1);
-    cout << "all facator is = " << c << "\n"
+    cout << "all facator is = " << c << "\n";
 
     return 0;
 }
