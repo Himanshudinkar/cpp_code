@@ -12,7 +12,7 @@ int main()
     cin >> number2;
 
     cout << "press 1 for swap" << "\n";
-    cout << "press 2 for swap" << "\n";
+    cout << "press 2 for larg" << "\n";
     int calculation = 0;
     cin >> calculation;
 

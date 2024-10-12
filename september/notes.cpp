@@ -28,7 +28,7 @@ int main()
         amount = amount-n50*50;
     }
     if (amount >= 20)
-    {
+    {   
         n20 = amount/20;
         amount = amount-n20*20;
     }

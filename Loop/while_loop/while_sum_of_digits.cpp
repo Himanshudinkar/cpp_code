@@ -16,6 +16,7 @@ int main()
         s = s + k;
         a = a / 10;
     }
+
     cout << s;
    return 0;
 }
