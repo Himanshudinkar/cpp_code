@@ -2,7 +2,7 @@
 using namespace std;
 int main()
 {
-    cout << "enter number to chake prime number" << "\n";
+    cout << "enter number to checke prime number" << "\n";
     int number = 0;
     cin >> number;
 
