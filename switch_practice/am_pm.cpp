@@ -2,11 +2,11 @@
 using namespace std;
 int main()
 {
-    cout << "enter fahrenheit" << "\n";
-    float f = 0;
-    cin >> f;
+    cout << "enter celsicu" << "\n";
+    float c = 0;
+    cin >> c;
 
-    float c = (f - 32) * 5.0/9;
+    float f = (9/5) * c + 32;
 
-    cout << c;
+    cout << f;
 }
