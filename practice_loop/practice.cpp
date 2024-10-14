@@ -2,14 +2,31 @@
 using namespace std;
 int main()
 {
-    int number = 1;
-    int i = 0;
+    cout << "enter a number" << "\n";
+    int number = 0;
+    cin >> number;
+
+    int i = 1;
+
+    bool f = false;
 
     do
     {
-        i = number + i;
-        number++;
-    } while (number <= 10);
-    cout << "sum = " << i;
+        if (i * i  == number)
+        {
+            f = true;
+            break;
+        }
+        i++;
+    } while (i <= number/2);
+
+    if (f == true)
+    {
+        cout << "square root is " << i << "\n";
+    }
+    else
+    {
+        cout << "square root not possible" << "\n";
+    }
     return 0;
 }
