@@ -6,18 +6,26 @@ int main()
     int number = 0;
     cin >> number;
 
-    int c = 0;
+    int i = number - 1;
+
+    int s = 0;
 
     do
     {
-        if (number % 10 >= 0)
+        if (number % i == 0)
         {
-            c++;
+            s = s + i;
         }
-        number = number/10;
-    } while (number > 0);
-    
-    cout << c;
+        i--;
+    } while (i>=1);
+
+    if (s == number)
+    {
+        cout << "perfect number";
+    }
+    else
+    {
+        cout << "not perfect number";
+    }
     return 0;
-    
 }
