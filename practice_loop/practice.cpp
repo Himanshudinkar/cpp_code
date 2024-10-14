@@ -2,30 +2,40 @@
 using namespace std;
 int main()
 {
-    cout << "enter a number" << "\n";
+    
+    cout << "enter  a number" << "\n";
     int number = 0;
     cin >> number;
 
-    int i = number - 1;
+    int r = 0;
+    int c = 0;
 
-    int s = 0;
+    int org = number;
 
-    do
-    {
-        if (number % i == 0)
-        {
-            s = s + i;
-        }
-        i--;
-    } while (i>=1);
+   if (number >= 100 && number <= 999)
+   {
+     do
+     {
+        c = number % 10;
+        r = r + (c*c*c);
+        number = number / 10;
+     } while (number > 0);
+     
+     if (r == org)
+     {
+        cout << "armstrong";
+     }
 
-    if (s == number)
-    {
-        cout << "perfect number";
-    }
-    else
-    {
-        cout << "not perfect number";
-    }
+     else
+     {
+        cout << "not armstrong";
+     }
+     
+   }
+   else
+   {
+    cout << "invalid number";
+   }
+    
     return 0;
 }
