@@ -6,27 +6,18 @@ int main()
     int number = 0;
     cin >> number;
 
-    int i = 1;
-
-    bool f = false;
+    int c = 0;
 
     do
     {
-        if (i * i  == number)
+        if (number % 10 >= 0)
         {
-            f = true;
-            break;
+            c++;
         }
-        i++;
-    } while (i <= number/2);
-
-    if (f == true)
-    {
-        cout << "square root is " << i << "\n";
-    }
-    else
-    {
-        cout << "square root not possible" << "\n";
-    }
+        number = number/10;
+    } while (number > 0);
+    
+    cout << c;
     return 0;
+    
 }
