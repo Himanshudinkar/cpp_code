@@ -1,7 +1,7 @@
 /*
-              1
-            1 2
-          1 2 3
+              A
+            B A
+          C B A
 */
 
 #include <iostream>
@@ -16,9 +16,9 @@ int main()
         {
             cout << " ";
         }
-        for (int j = 1; j <= i; j++)
+        for (int j = i; j >= 1; j--)
         {
-            cout << j;
+            cout << char (j + 64);
         }
         cout << "\n";
     }
