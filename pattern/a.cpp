@@ -1,9 +1,8 @@
 /*
-        *
-        * *
-        * * *
+   A
+   A B
+   A B C
 */
-
 
 #include <iostream>
 using namespace std;
@@ -16,12 +15,9 @@ int main()
     {
         for (int j = 1; j <= i; j++)
         {
-            cout << "*";
+            cout << char(j + 64);
         }
         cout << "\n";
     }
     return 0;
 }
-
-
-
