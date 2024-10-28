@@ -54,9 +54,6 @@ int main()
     }
     default:
     {
-        cout << "invalid value\n";
-        break;
-    }
     }
     return 0;
 }
