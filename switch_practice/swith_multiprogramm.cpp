@@ -54,7 +54,7 @@ int main()
     }
     default:
     {
-        cout << 
+        cout << "invalid option" << "\n";
     }
     return 0;
 }
