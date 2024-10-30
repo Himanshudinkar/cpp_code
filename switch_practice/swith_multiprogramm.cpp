@@ -54,6 +54,7 @@ int main()
     }
     default:
     {
+        cout << 
     }
     return 0;
 }
