@@ -2,17 +2,15 @@
 using namespace std;
 int main(){
     int arr [] = {19,8,4,5,6};
-    int s = INT8_MAX;
     int len = sizeof(arr)/sizeof(arr[0]);
 
     for (int i = 0; i < len; i++)
     {
-        if (s > arr[i])
+        if (arr[i] % 2 != 0)
         {
-            s = arr[i];
+            cout << arr[i] << "\t";
         }
         
     }
-    cout << s << "\t";
     return 0;
 }

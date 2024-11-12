@@ -8,12 +8,13 @@ int main()
 
    if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0)
    {
-        cout << "Leap year" << "\n";
+    cout << "Leap year" << "\n";
    }
 
    else
    {
     cout << "Not Leap Year";
    }
+
     return 0;
 }
