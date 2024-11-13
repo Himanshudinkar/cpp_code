@@ -7,13 +7,12 @@ int main()
 {
     int arr[] = {7,4,6,11,5};
     int len = sizeof(arr) / sizeof(arr[0]);
-
+    int parr[];
 
     for (int i = 0; i < len; i++)
     {
-        arr[i] = arr[i]-1;
-        
-        
+        parr[i] = arr[i]-1;
+        cout << parr[i];
     }
     
 }
