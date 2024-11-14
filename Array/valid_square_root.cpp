@@ -19,6 +19,6 @@ int main(){
         j++;
     } while (j <= arr[i]/2);
     }
-    return 0;
+    return 0
 }
 
