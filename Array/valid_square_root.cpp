@@ -3,22 +3,25 @@
 
 #include <iostream>
 using namespace std;
-int main(){
+int main()
+{
     int arr [] = {64,24,81,312,25,121,76};
     int len = sizeof(arr)/sizeof(arr[0]);
 
     for (int i = 0; i < len; i++)
     {
-    
-        do
-    {
-        if (j * j == arr[i])
+        int j = arr[i];
+        for (int x = 1; x <= j; x++)
         {
-          cout << "square of number is = " << arr[i] << "\n";
+            if (x*x == j)
+            {
+                cout << j << "\t";
+                break;
+            }
+            
         }
-        j++;
-    } while (j <= arr[i]/2);
+        
     }
-    return 0
+    return 0;
 }
 
