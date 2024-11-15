@@ -8,5 +8,5 @@ int main()
         cout << arr[i] << "\t";
     }
     
-    return 0
+    return 0;
 } 
