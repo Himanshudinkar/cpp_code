@@ -16,7 +16,7 @@ int main()
     }
     cout << "\n" << "after input" << "\n";
 
-    for (int r = 0; r < 2; r++)
+    for (in1t r = 0; r < 2; r++)
     {
         for (int c = 0; c < 3; c++)
         {
