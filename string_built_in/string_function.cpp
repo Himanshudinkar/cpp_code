@@ -12,17 +12,15 @@ int main()
     cout << "enter ur surname\n";
     cin >> surname;
 
-    cout << "\n";
-
-    cout << strlen(name) << "\n"; // length of string
-    cout << "\n upeeercase=" << strupr(name) << "\n"; //upercase
-    cout << "\n lowercase=" << strlwr(name) << "\n"; //lowercase
+    cout << "length=" << strlen(name) << "\n"; // length of string
+    cout << "upercase=" << strupr(name) << "\n"; //upercase
+    cout << "lowercase=" << strlwr(name) << "\n"; //lowercase
     cout << strcat(name,surname); // string concatenation
     cout << "\n";
-    cout << "\n name=" <<name << "\n";
+    cout << "name=" <<name << "\n";
     cout << "surname=" <<surname << "\n";
-    cout << strcpy(name,surname);//string copy
-    cout << "\n name=" <<name << "\n";
+    cout << "copy " <<strcpy(name,surname) << "\n"; //string copy
+    cout << "name=" <<name << "\n";
     cout << "surname=" <<surname << "\n";
 
     return 0;
