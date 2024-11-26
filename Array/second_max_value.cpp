@@ -16,9 +16,8 @@ int main() {
         else if (arr[i] > second && arr[i] != first) 
         {
             second = arr[i];
-            cout << "second heighest value = " << second << "\n";
         }
     }
-
+      cout << "second heighest value = " << second << "\n";
     return 0;
 }
