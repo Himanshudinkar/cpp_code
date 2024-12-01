@@ -76,24 +76,46 @@
 //     return 0;
 // }
 
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     int arr[] = {10,30,4,60,3,1,86,23,98};
+//     int len = sizeof(arr)/sizeof(arr[0]);
+
+//     int min = INT8_MAX;
+
+//     for (int i = 0; i < len; i++)
+//     {
+//         if (min > arr[i])
+//         {
+//             min = arr[i];
+//         }
+        
+//     }
+//     cout << "minimum value = " << min << "\n";
+
+//     return 0;
+// }
+
 #include <iostream>
 using namespace std;
 int main()
 {
-    int arr[] = {10,30,4,60,3,1,86,23,98};
+    int arr[] = {10,30,4,60,3,1,86,23,9};
     int len = sizeof(arr)/sizeof(arr[0]);
 
-    int min = INT8_MAX;
+    int mxn = INT8_MIN;
 
     for (int i = 0; i < len; i++)
     {
-        if (min > arr[i])
+        if (max < arr[i])
         {
-            min = arr[i];
+            mxn = arr[i];
         }
         
     }
-    cout << "minimum value = " << min << "\n";
+    cout << "minimum value = " << max << "\n";
 
     return 0;
 }
