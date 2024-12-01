@@ -41,37 +41,59 @@
 // }
 
 
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     int arr[] = {64,24,81,312,25,121,76,625};
+//     int len = sizeof(arr)/sizeof(arr[0]);
+
+//     cout << "given array" << "\n";
+    
+//     for (int i = 0; i < len; i++)
+//     {
+//         cout << arr[i] << "\t";
+//     }
+    
+
+//     cout << "\n valid square of this number\n";
+
+//     for (int j = 0; j < len; j++)
+//     {
+//         int s = arr[j];
+
+//         for (int x = 1; x <= s; x++)
+//         {
+//             if (x*x == s)
+//             {
+//                 cout << s << "\t";
+//                 break;
+//             }
+           
+//         }
+        
+//     }
+//     return 0;
+// }
+
 #include <iostream>
 using namespace std;
 int main()
 {
-    int arr[] = {64,24,81,312,25,121,76,625};
+    int arr[] = {10,30,4,60,3,1,86,23,98};
     int len = sizeof(arr)/sizeof(arr[0]);
 
-    cout << "given array" << "\n";
-    
+    int min = INT8_MAX;
+
     for (int i = 0; i < len; i++)
     {
-        cout << arr[i] << "\t";
-    }
-    
-
-    cout << "\n valid square of this number\n";
-
-    for (int j = 0; j < len; j++)
-    {
-        int s = arr[j];
-
-        for (int x = 1; x <= s; x++)
+        if (min > arr[i])
         {
-            if (x*x == s)
-            {
-                cout << s << "\t";
-                break;
-            }
-           
+            min = arr[i];
         }
         
     }
+    cout << "minimum value = " << min << "\n";
+
     return 0;
 }
