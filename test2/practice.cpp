@@ -434,10 +434,64 @@
 
 //2D
 
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     cout << "enter size of row" << "\n";
+//     int r = 0;
+//     cin >> r;
+
+//     cout << "enter size of column" << "\n";
+//     int c = 0;
+//     cin >> c;
+
+//     cout << "enter " << r*c << " values" << "\n";
+//     int arr[r][c];
+
+//     for (int i = 0; i < r; i++)
+//     {
+//         for (int j = 0; j < c; j++)
+//         {
+//             cin >> arr[i][j];
+//         }
+        
+//     }
+
+//     cout << "\n array like \n";
+
+//     for (int i = 0; i < r; i++)
+//     {
+//         for (int j = 0; j < c; j++)
+//         {
+//             cout << arr[i][j] << "\t";
+//         }
+//         cout << "\n";
+//     }
+    
+//     cout << "\n even number \n";
+
+//     for (int i = 0; i < r; i++)
+//     {
+//         for (int j = 0; j < c; j++)
+//         {
+//             if (arr[i][j] % 2 == 0)
+//             {
+//                 cout << arr[i][j] << "\t";
+//             }
+            
+//         }
+        
+//     }
+//     return 0;
+    
+// }
+
 #include <iostream>
 using namespace std;
 int main()
 {
+    int min = INT8_MAX;
     cout << "enter size of row" << "\n";
     int r = 0;
     cin >> r;
@@ -446,7 +500,7 @@ int main()
     int c = 0;
     cin >> c;
 
-    cout << "enter " << r*c << " values" << "\n";
+    cout << "enter " << r*c << "values" << "\n";
     int arr[r][c];
 
     for (int i = 0; i < r; i++)
@@ -457,32 +511,24 @@ int main()
         }
         
     }
-
+    
     cout << "\n array like \n";
 
     for (int i = 0; i < r; i++)
     {
         for (int j = 0; j < c; j++)
         {
-            cout << arr[i][j] << "\t";
-        }
-        cout << "\n";
-    }
-    
-    cout << "\n even number \n";
-
-    for (int i = 0; i < r; i++)
-    {
-        for (int j = 0; j < c; j++)
-        {
-            if (arr[i][j] % 2 == 0)
+            if (min > arr[i][j])
             {
-                cout << arr[i][j] << "\t";
+                min = arr[i][j];
             }
             
         }
         
     }
-    return 0;
     
+    cout << min << "\n";
+
+    return 0;
+
 }
