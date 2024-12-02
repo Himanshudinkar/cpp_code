@@ -487,11 +487,57 @@
     
 // }
 
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     int min = INT8_MAX;
+//     cout << "enter size of row" << "\n";
+//     int r = 0;
+//     cin >> r;
+
+//     cout << "enter size of column" << "\n";
+//     int c = 0;
+//     cin >> c;
+
+//     cout << "enter " << r*c << "values" << "\n";
+//     int arr[r][c];
+
+//     for (int i = 0; i < r; i++)
+//     {
+//         for (int j = 0; j < c; j++)
+//         {
+//             cin >> arr[i][j];
+//         }
+        
+//     }
+    
+//     cout << "\n array like \n";
+
+//     for (int i = 0; i < r; i++)
+//     {
+//         for (int j = 0; j < c; j++)
+//         {
+//             if (min > arr[i][j])
+//             {
+//                 min = arr[i][j];
+//             }
+            
+//         }
+        
+//     }
+    
+//     cout << min << "\n";
+
+//     return 0;
+
+// }
+
 #include <iostream>
 using namespace std;
 int main()
 {
-    int min = INT8_MAX;
+    int s = 0;
     cout << "enter size of row" << "\n";
     int r = 0;
     cin >> r;
@@ -518,16 +564,12 @@ int main()
     {
         for (int j = 0; j < c; j++)
         {
-            if (min > arr[i][j])
-            {
-                min = arr[i][j];
-            }
-            
+            s = s + arr[i][j];  
         }
         
     }
     
-    cout << min << "\n";
+    cout << s << "\n";
 
     return 0;
 
