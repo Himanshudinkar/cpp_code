@@ -432,41 +432,57 @@
 
 // }
 
+//2D
+
 #include <iostream>
-using namespace std; 
+using namespace std;
 int main()
 {
-    int arr[] = {2,65,23,867,12,9,2,1};
-    int len = sizeof(arr)/sizeof(arr[0]);
+    cout << "enter size of row" << "\n";
+    int r = 0;
+    cin >> r;
 
-    for (int i = 0; i < len; i++)
+    cout << "enter size of column" << "\n";
+    int c = 0;
+    cin >> c;
+
+    cout << "enter " << r*c << " values" << "\n";
+    int arr[r][c];
+
+    for (int i = 0; i < r; i++)
     {
-        cout << arr[i] << "\t";
+        for (int j = 0; j < c; j++)
+        {
+            cin >> arr[i][j];
+        }
+        
     }
 
-    cout << "\n output \n";
+    cout << "\n array like \n";
 
-    for (int i = 0; i < len; i++)
+    for (int i = 0; i < r; i++)
     {
-        for (int j = 0; j < len-1; j++)
+        for (int j = 0; j < c; j++)
         {
-            int tmp;
+            cout << arr[i][j] << "\t";
+        }
+        cout << "\n";
+    }
+    
+    cout << "\n even number \n";
 
-            if (arr[j] < arr[j+1])
+    for (int i = 0; i < r; i++)
+    {
+        for (int j = 0; j < c; j++)
+        {
+            if (arr[i][j] % 2 == 0)
             {
-                tmp = arr[j+1];
-                arr[j+1] = arr[j];
-                arr[j] = tmp;
+                cout << arr[i][j] << "\t";
             }
             
-        }  
+        }
+        
     }
-    
-    for (int i = 0; i < len; i++)
-    {
-        cout << arr[i] << "\t";
-    }
-    
     return 0;
     
 }
