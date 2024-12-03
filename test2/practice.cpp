@@ -656,9 +656,9 @@ int main()
 {
     cout << "enter length of array" << "\n";
     int len = 0;
-    cin >> len ;
+    cin  >> len;
 
-    cout << "enter" << len << "values" << "\n";
+    cout << "enter " << len << "values" << "\n";
     int arr[len];
 
     for (int i = 0; i < len; i++)
@@ -666,7 +666,7 @@ int main()
         cin >> arr[i];
     }
 
-    cout << "array like" << "\n";
+    cout << "given input is " << "\n";
 
     for (int i = 0; i < len; i++)
     {
@@ -677,28 +677,21 @@ int main()
 
     for (int i = 0; i < len; i++)
     {
-        for (int j = 0; j < len-1; j++)
+        int s = arr[i];
+
+        for (int x = 1; x <= s; x++)
         {
-            int tmp;
-            if (arr[j] > arr[j+1])
+            if (x * x == s)
             {
-                tmp = arr[j+1];
-                arr[j+1] = arr[j];
-                arr[j] = tmp;
+                cout << s << "\t";
+                break;
             }
             
         }
         
     }
 
-    for (int i = 0; i < len; i++)
-    {
-        cout << arr[i] << "\t";
-    }
-
-
     return 0;
-    
     
     
 }
