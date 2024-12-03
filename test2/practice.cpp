@@ -652,8 +652,9 @@
 using namespace std;
 int main()
 {
-    int arr[] = {7,4,12,11,17,9,22,42};
+    int arr[] = {2,342,67,23,9,1,34};
     int len = sizeof(arr)/sizeof(arr[0]);
+    int min = INT8_MAX;
 
     for (int i = 0; i < len; i++)
     {
@@ -664,26 +665,15 @@ int main()
 
     for (int i = 0; i < len; i++)
     {
-        int p = arr[i] - p;
-        bool f = true;
-
-        do
+        if (min > arr[i])
         {
-            if (arr[i] % p == 0)
-            {
-                f = false;
-            }
-            p--;
-        } while (p > 1);
-
-         if (f == true)
-    {
-        cout << arr[i] << "\t";
-    }
+            min = arr[i];
+        }
         
     }
     
-   
-    
+    cout << min << "\n";
+
     return 0;
+    
 }
