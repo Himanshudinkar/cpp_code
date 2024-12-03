@@ -648,12 +648,25 @@
 
 // }
 
+// accending order
+
 #include <iostream>
 using namespace std;
 int main()
 {
-    int arr[] = {23,23,65,2,4,1,5,4,3};
-    int len = sizeof(arr)/sizeof(arr[0]);
+    cout << "enter length of array" << "\n";
+    int len = 0;
+    cin >> len ;
+
+    cout << "enter" << len << "values" << "\n";
+    int arr[len];
+
+    for (int i = 0; i < len; i++)
+    {
+        cin >> arr[i];
+    }
+
+    cout << "array like" << "\n";
 
     for (int i = 0; i < len; i++)
     {
@@ -666,15 +679,15 @@ int main()
     {
         for (int j = 0; j < len-1; j++)
         {
-         int tmp;
-
-         if (arr[j] < arr[j+1])
-         {
-            tmp = arr[j+1];
-            arr[j+1] = arr[j];
-            arr[j] = tmp;
-         }
-        } 
+            int tmp;
+            if (arr[j] > arr[j+1])
+            {
+                tmp = arr[j+1];
+                arr[j+1] = arr[j];
+                arr[j] = tmp;
+            }
+            
+        }
         
     }
 
@@ -682,6 +695,10 @@ int main()
     {
         cout << arr[i] << "\t";
     }
-    
+
+
     return 0;
+    
+    
+    
 }
