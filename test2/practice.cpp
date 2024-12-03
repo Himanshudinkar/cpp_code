@@ -533,44 +533,157 @@
 
 // }
 
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     int s = 0;
+//     cout << "enter size of row" << "\n";
+//     int r = 0;
+//     cin >> r;
+
+//     cout << "enter size of column" << "\n";
+//     int c = 0;
+//     cin >> c;
+
+//     cout << "enter " << r*c << "values" << "\n";
+//     int arr[r][c];
+
+//     for (int i = 0; i < r; i++)
+//     {
+//         for (int j = 0; j < c; j++)
+//         {
+//             cin >> arr[i][j];
+//         }
+        
+//     }
+    
+//     cout << "\n array like \n";
+
+//     for (int i = 0; i < r; i++)
+//     {
+//         for (int j = 0; j < c; j++)
+//         {
+//             s = s + arr[i][j];  
+//         }
+        
+//     }
+    
+//     cout << s << "\n";
+
+//     return 0;
+
+// }
+
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     cout << "enter size of row" << "\n";
+//     int r = 0;
+//     cin >> r;
+
+//     cout << "enter size of column" << "\n";
+//     int c = 0;
+//     cin >> c;
+
+
+//     if (r == c)
+//     {
+      
+//        cout << "enter " << r*c << "values" << "\n";
+//        int arr[r][c];
+
+//         for (int i = 0; i < r; i++)
+//       {
+//         for (int j = 0; j < c; j++)
+//         {
+//             cin >> arr[i][j];
+//         }
+        
+//       }
+
+//       cout << "\n array like \n";
+
+//         for (int i = 0; i < r; i++)
+//       {
+//         for (int j = 0; j < c; j++)
+//         {
+//             cout << arr[i][j] << "\t";
+//         }
+//         cout << "\n";
+//       }
+
+//       cout << "\n after transpose\n";
+
+//       for (int i = 0; i < r; i++)
+//       {
+//         for (int j = i+1; j < c; j++)
+//         {
+//             int tmp;
+//             tmp = arr[i][j];
+//             arr[i][j] = arr[j][i];
+//             arr[j][i] = tmp;
+//         }
+//       }
+      
+//       for (int i = 0; i < r; i++)
+//       {
+//         for (int j = 0; j < c; j++)
+//         {
+//             cout << arr[i][j] << "\t";
+//         }
+//         cout << "\n";
+//       }
+      
+
+
+//     }
+//     else
+//     {
+//         cout << "matrix transpose imposiible" << "\n";
+//     }
+
+//     return 0;
+
+// }
+
 #include <iostream>
 using namespace std;
 int main()
 {
-    int s = 0;
-    cout << "enter size of row" << "\n";
-    int r = 0;
-    cin >> r;
+    int arr[] = {7,4,12,11,17,9,22,42};
+    int len = sizeof(arr)/sizeof(arr[0]);
 
-    cout << "enter size of column" << "\n";
-    int c = 0;
-    cin >> c;
-
-    cout << "enter " << r*c << "values" << "\n";
-    int arr[r][c];
-
-    for (int i = 0; i < r; i++)
+    for (int i = 0; i < len; i++)
     {
-        for (int j = 0; j < c; j++)
+        cout << arr[i] << "\t";
+    }
+
+    cout << "\n output \n";
+
+    for (int i = 0; i < len; i++)
+    {
+        int p = arr[i] - p;
+        bool f = true;
+
+        do
         {
-            cin >> arr[i][j];
-        }
+            if (arr[i] % p == 0)
+            {
+                f = false;
+            }
+            p--;
+        } while (p > 1);
+
+         if (f == true)
+    {
+        cout << arr[i] << "\t";
+    }
         
     }
     
-    cout << "\n array like \n";
-
-    for (int i = 0; i < r; i++)
-    {
-        for (int j = 0; j < c; j++)
-        {
-            s = s + arr[i][j];  
-        }
-        
-    }
+   
     
-    cout << s << "\n";
-
     return 0;
-
 }
