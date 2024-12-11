@@ -650,48 +650,730 @@
 
 // accending order
 
-#include <iostream>
-using namespace std;
-int main()
-{
-    cout << "enter length of array" << "\n";
-    int len = 0;
-    cin  >> len;
+   
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     cout << "enter size of r1" << "\n";
+//     int r1 = 0;
+//     cin >> r1;
 
-    cout << "enter " << len << "values" << "\n";
-    int arr[len];
+//     cout << "enter size of c1" << "\n";
+//     int c1 = 0;
+//     cin >> c1;
 
-    for (int i = 0; i < len; i++)
-    {
-        cin >> arr[i];
-    }
+//     cout << "enter size of r2" << "\n";
+//     int r2 = 0;
+//     cin >> r2;
 
-    cout << "given input is " << "\n";
+//     cout << "enter size of c2" << "\n";
+//     int c2 = 0;
+//     cin >> c2;
 
-    for (int i = 0; i < len; i++)
-    {
-        cout << arr[i] << "\t";
-    }
-    
-    cout << "\n output \n";
+//     if (c2 == r1)
+//     {
+//         int a[r1][c1];
+//         int b[r2][2];
+//         int ans[r1][c2];
+//         int s = 0;
 
-    for (int i = 0; i < len; i++)
-    {
-        int s = arr[i];
+//         cout << "enter " << r1*c1 << "values of array 1" << "\n";
 
-        for (int x = 1; x <= s; x++)
-        {
-            if (x * x == s)
-            {
-                cout << s << "\t";
-                break;
-            }
+//         for (int i = 0; i < r1; i++)
+//         {
+//             for (int j = 0; j < c1; j++)
+//             {
+//                 cin >> a[i][j];
+//             }
             
-        }
-        
-    }
+//         }
 
-    return 0;
+//         cout << "\n enter" << r2*c2 << "values of array 2" << "\n";
+
+//          for (int i = 0; i < r2; i++)
+//         {
+//             for (int j = 0; j < c2; j++)
+//             {
+//                 cin >> b[i][j];
+//             }
+            
+//         }
+
+//         cout << "\n data of array 1 is" << "\n";
+
+//         for (int i = 0; i < r1; i++)
+//         {
+//             for (int j = 0; j < c1; j++)
+//             {
+//                 cout << a[i][j]  << "\t";
+//             }
+//             cout << "\n";
+//         }
+
+
+//         cout << "\n data of array 2 is" << "\n";
+
+//         for (int i = 0; i < r2; i++)
+//         {
+//             for (int j = 0; j < c2; j++)
+//             {
+//                 cout << b[i][j]  << "\t";
+//             }
+//             cout << "\n";
+//         }
+        
+//         cout << "\n after matrix multipication\n";
+
+//         for (int i = 0; i < r1; i++)
+//         {
+//             s = 0;
+
+//             for (int j = 0; j < c2; j++)
+//             {
+//                 for (int k = 0; k < c1; k++)
+//                 {
+//                     s = s + a[i][k] * b[k][i];
+//                     ans[i][j] = s;
+//                 }
+                
+//             }
+            
+//         }
+
+//         for (int i = 0; i < r1; i++)
+//         {
+//             for (int j = 0; j < c2; j++)
+//             {
+//                 cout << ans[i][j] << "\t";
+//             }
+//             cout << "\n";
+//         }      
+
+         
+//     }
+//      else{
+//         cout << "matrix multipication is impossible" << "\n";
+//      }
+
+//      return 0;
+    
+// }
+
+// #include <iostream>
+// using namespace std;
+
+//  int c = 0;
+
+// void run(int &a, int &b)
+// {
+   
+//     c= a + b;
+    
+// }
+
+// int main()
+// {
+//     cout << "enter number 1" << "\n";
+//     int n1 = 0;
+//     cin >> n1;
+
+//     cout << "enter number 2" << "\n";
+//     int n2 = 0;
+//     cin >> n2;
+//     run(n1,n2);
+    
+//     cout << c;
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+
+// int run()
+// {
+//     return 3;
+// }
+
+// int main()
+// {
+//     cout << run();
+// }
+
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     int arr[] = {2,43,64,24,25,12,36,34};
+//     int len = sizeof(arr)/sizeof(arr[0]);
+  
+
+//     for (int i = 0; i < len; i++)
+//     {
+//        int s = arr[i];
+
+//        for (int x = 1; x < s; x++)
+//        {
+//          if (x*x == s)
+//          {
+//             cout << s << "\t";
+//             break;
+//          }
+         
+//        }
+       
+       
+//     }
+    
+
     
     
-}
+// }
+
+// function question ..............................................................................
+
+// #include <iostream>
+// using namespace std;
+
+// void run(int n)
+// {
+//    cout << n*n*n << "\n";
+// }
+
+// int main()
+// {
+//    cout << "enter a number" << "\n";
+//    int n = 0;
+//    cin >> n;
+
+//    run(n);
+
+//    return 0;
+
+// }
+
+// #include <iostream>
+// using namespace std;
+
+// void run(float r,float pi)
+// {
+   
+//    float d = 0;
+//    float c = 0;
+//    float a = 0;
+
+//    d = 2 * r;
+//    c = 2*pi*r;
+//    a = pi * (r * r);
+
+//    cout << "diameter of circle is = " << d << "\n";
+//    cout << "circumfarence of cicle is = " << c << "\n";
+//    cout << "area of circle is" << a << "\n";
+
+// }
+
+// int main()
+// {
+//    cout << "enter radius of circle" << "\n";
+//    float r = 0;
+//    cin >> r;
+
+//    const float pi = 3.14;
+    
+//    run(r,pi);
+
+//    return 0;
+
+
+// }
+
+// #include <iostream>
+// using namespace std;
+
+// void run(int n1,int n2)
+// {
+//    if (n1 > n2)
+//    {
+//       cout << "maximum number is = " << n1 << "\n";
+//       cout << "minimum number is = " << n2 << "\n";
+//    }
+//    else if (n2 > n1)
+//    {
+//       cout << "maximum number is = " << n2 << "\n";
+//       cout << "minimum number is = " << n1 << "\n";
+//    }
+   
+   
+// }
+// int main()
+// {
+//    cout << "enter number 1" << "\n";
+//    int n1 = 0;
+//    cin >> n1;
+
+//    cout << "enter number 2" << "\n";
+//    int n2 = 0;
+//    cin >> n2;
+
+//   run(n1,n2);
+
+// }
+
+// #include <iostream>
+// using namespace std;
+
+// void run (int n)
+// {
+//    if (n % 2 == 0)
+//    {
+//       cout << "number is even" << "\n";
+//    }
+//    else if (n % 2 != 0)
+//    {
+//       cout << "number is odd" << "\n";
+//    }
+   
+// }
+// int main()
+// {
+//    cout << "enter a number " << "\n";
+//    int n = 0;
+//    cin >> n;
+   
+//    run(n);
+// }
+
+// #include <iostream>
+// using namespace std;
+
+// void run(int start, int end)
+// {
+   
+//    for (int i = start; i < end; i++)
+//    {
+//       int p = i - 1;
+//       int s = 0;
+
+//       do
+//       { 
+//          if (i % p == 0)
+//          {
+//             s = s + p;
+//          }
+//          p--;
+         
+//       } while (p >=1 );
+
+//     if (s == i)
+//     {
+//       cout << i << "\n";
+//     }
+        
+//    }
+   
+// }
+
+// int main()
+// {
+//    cout << "enter starting poin of interval" << "\n";
+//    int start  = 0;
+//    cin >> start;
+
+//    cout << "enter ending point of given number" << "\n";
+//    int end = 0;
+//    cin >> end;
+
+//    run(start,end);
+
+// }
+
+// #include <iostream>
+// using namespace std;
+
+// void run(int n)
+// {
+//   int prime = n-1;
+//   bool f = false;
+
+//   do
+//   {
+//     if (n % prime == 0)
+//     {
+//       f = true;
+//     }
+//     prime--;
+//   } while (prime > 1);
+
+//   if (f == false)
+//   {
+//     cout << "number is prime" << "\n";
+//   }
+
+//   else
+//   {
+//     cout << "not prime" << "\n";
+//   }
+  
+  
+// }
+// void perfect(int n)
+// {
+//    int p = n-1;
+//    int s = 0;
+
+//    do
+//    {
+//       if (n %p == 0)
+//       {
+//          s = s + p;
+//       }
+//       p--;
+//    } while (p>0);
+
+//    if (s == n)
+//    {
+//       cout << "number is perfect" << "\n";
+//    }
+//    else
+//    {
+//       cout << "number is not perfect" << "\n";
+//    }
+   
+// }
+
+// void arm(int n)
+// {
+//   int s = 0;
+//   int c = 0;
+//   int num = n;
+
+//    if (n >= 100 && n <= 999)
+//    {
+//       do
+//       {
+//          c = n % 10;
+//          s = s + (c*c*c);
+//          n = n/10;
+//       } while (n > 0);
+
+//       if ( s == num)
+//       {
+//          cout << "number is armstrong" << "\n";
+//       }
+//       else
+//       {
+//          cout << "number is not armstrong" << "\n";
+//       }
+      
+      
+//    }
+//    else
+//    {
+//       cout << "invalid number" << "\n";
+//    }
+   
+
+// }
+// int main()
+// {
+//    cout << "enter a number" << "\n";
+//    int n = 0;
+//    cin >> n;
+
+//    run(n);
+//    perfect(n);
+//    arm(n);
+// }
+// #include <iostream>
+// using namespace std;
+
+// void run(int b,int p)
+// {
+//    int s = 1;
+
+//    do
+//    {
+//       s = s * b;
+//       p--;
+//    } while (p > 0);
+
+//    cout << s << "\n";
+// }
+// int main()
+// {
+//    cout << "enter base" << "\n";
+//    int b = 0;
+//    cin >> b;
+
+//    cout << "enter power" << "\n";
+//    int p = 0;
+//    cin >> p;
+
+//     run(b,p);
+
+// }
+
+// #include <iostream>
+// using namespace std;
+// void run(int n)
+// {
+//    int c = 0;
+//    int r = 0;
+
+//    do
+//    {
+//       c = n % 10;
+//       r = r * 10 + c;
+//       n = n/10;
+//    } while (n > 0);
+
+//    cout << "revers number of number is = " << r << "\n";
+   
+// }
+
+// int main()
+// {
+//    cout << "enter a number" << "\n";
+//    int n = 0;
+//    cin >> n;
+
+//    run(n);
+// }
+
+// #include <iostream>
+// using namespace std;
+
+// void run(int n)
+// {
+//    int c = 0;
+//    int r = 0;
+//    int num = n;
+
+//    do
+//    {
+//       c = n % 10;
+//       r = r * 10 + c;
+//       n = n/10;
+
+//    } while (n > 0);
+
+//    if (num == r)
+//    {
+//       cout << "number is palindrom" << "\n";
+//    }
+//    else
+//    {
+//       cout << "number not palindrom" << "\n";
+//    }
+   
+// }
+// int main()
+// {
+//    cout << "enter a number" << "\n";
+//    int n = 0;
+//    cin >> n;
+
+//    run(n);
+// }
+
+// #include <iostream>
+// using namespace std;
+
+// void run(int n)
+// {
+//    int f = n;
+//    int s = 1;
+
+//    do
+//    {
+//       s = s * f;
+//       f--;
+//    } while (f > 0);
+   
+//    cout << s << "\n";
+// }
+// int main()
+// {
+//    cout << "enter a number" << "\n";
+//    int n = 0;
+//    cin >> n;
+
+//    run(n);
+// }
+
+//pattern
+
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     int r = 3;
+
+//     for (int i = 1; i <= r; i++)
+//     {
+//         for (int j = 1; j <= i; j++)
+//         {
+//             cout << "*";
+//         }
+//         cout << "\n";
+//     }
+    
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     int r = 3;
+
+//     for (int i = 1; i <= r; i++)
+//     {
+//         for (int j = 1; j <= i; j++)
+//         {
+//             cout << i;
+//         }
+//         cout << "\n";
+//     }
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     int r = 3;
+
+//     for (int i = 1; i <= r; i++)
+//     {
+//         for (int j = 1; j <= i; j++)
+//         {
+//             cout << j;
+//         }
+//         cout << "\n";
+//     }
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     int r = 3;
+//     int n = 1;
+
+//     for (int i = 1; i <= r; i++)
+//     {
+//         for (int j = 1; j <= i; j++)
+//         {
+//             cout << n;
+//             n++;
+//         }
+//         cout << "\n";
+//     }
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     int r = 3;
+//     int n = 1;
+
+//     for (int i = 1; i <= r; i++)
+//     {
+//         for (int j = 1; j <= i; j++)
+//         {
+//             cout << n *n;
+//             n++;
+//         }
+//         cout << "\n";
+//     }
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     int r = 3;
+
+//     for (int i = 1; i <= r; i++)
+//     {
+//         for (int j = 1; j <= i; j++)
+//         {
+//             cout << char(j+64);
+//         }
+//         cout << "\n";
+//     }
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     int r = 3;
+//     char c = 'A';
+
+//     for (int i = 1; i <= r; i++)
+//     {
+//         for (int j = 1; j <= i; j++)
+//         {
+//             cout << c;
+//             c++;
+//         }
+//         cout << "\n";
+//     }
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     int r = 3;
+
+//     for (int i = 1; i <= r; i++)
+//     {
+
+
+//         for (int s = 3; s >= i; s--)
+//         {
+//             cout << " ";
+//         }
+
+//         for (int j = 1; j <= i; j++)
+//         {
+//             cout << "*";
+//         }
+//         cout << "\n";
+//     }
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     int r = 3;
+
+//     for (int i = 1; i <= r; i++)
+//     {
+
+
+//         for (int s = 3; s >= i; s--)
+//         {
+//             cout << " ";
+//         }
+
+//         for (int j = 1; j <= i; j++)
+//         {
+//             cout << i;
+            
+//         }
+//         cout << "\n";
+//     }
+//     return 0;
+// }
